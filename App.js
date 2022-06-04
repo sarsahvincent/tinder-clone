@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import Card from './src/components/Tindercard/index';
+import users from './assets/data/users'
 
 const vincent = {
   name: 'Vincent Sarsah',
@@ -12,7 +13,7 @@ const vincent = {
 const App = () => {
   return (
     <View style={styles.pagContainer}>
-      <Card user={vincent} />
+      <Card user={users[3]} />
     </View>
   );
 };
